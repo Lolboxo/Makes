@@ -1,0 +1,99 @@
+local tangerex = loadstring(game:HttpGet("https://31645703-63d0-4449-8f89-04447a57bcc6.id.repl.co/Tangerex/Template/main.lua"))()
+
+reanimate = tangerex:Reanimate("PD",false --[[Usage: true or false to toggle click fling]]) -- SP / Simple, LF / Leg Fling, TF / Torso Fling, PD / Perma Death [Fling]
+
+reanimate:Hat("RedEyeSword","Left Arm",false,function()
+workspace.Camera.CameraSubject.Parent["RedEyeSword"].Handle.AccessoryWeld.C0=workspace.Camera.CameraSubject.Parent["RedEyeSword"].Handle.AccessoryWeld.C0:Lerp(CFrame.new(2.3+0*math.cos(sine/10),2+0*math.cos(sine/10),-1+0*math.cos(sine/10))*CFrame.Angles(math.rad(-100+0*math.cos(sine/10)),math.rad(40+0*math.cos(sine/10)),math.rad(-15+0*math.cos(sine/10))),0.5)
+end)
+
+reanimate:Animation("idle",function()
+RH.Part0 = workspace.Camera.CameraSubject.Parent.Torso
+LH.Part0 = workspace.Camera.CameraSubject.Parent.Torso
+NECK.C0=NECK.C0:Lerp(CFrame.new(0+0*math.cos(sine/10),1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+RJ.C0=RJ.C0:Lerp(CFrame.new(0+0*math.cos(sine/10),-1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(5+1*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+RS.C0=RS.C0:Lerp(CFrame.new(1.5+0*math.cos(sine/10),0.5+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(-11+3*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+LS.C0=LS.C0:Lerp(CFrame.new(-1.5+0*math.cos(sine/10),0.5+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(-11+3*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+RH.C0=RH.C0:Lerp(CFrame.new(0.5+0*math.cos(sine/10),-1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(-5+2*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+LH.C0=LH.C0:Lerp(CFrame.new(-0.5+0*math.cos(sine/10),-1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(-5+2*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5)
+workspace.Camera.CameraSubject.Parent["RedEyeSword"].Handle.AccessoryWeld.C0=workspace.Camera.CameraSubject.Parent["RedEyeSword"].Handle.AccessoryWeld.C0:Lerp(CFrame.new(2.3+0*math.cos(sine/10),2+0*math.cos(sine/10),-1+0*math.cos(sine/10))*CFrame.Angles(math.rad(-100+0*math.cos(sine/10)),math.rad(40+0*math.cos(sine/10)),math.rad(-15+0*math.cos(sine/10))),0.5)
+end)
+
+reanimate:Animation("walk",function()
+RH.Part0 = workspace.Camera.CameraSubject.Parent.Torso
+LH.Part0 = workspace.Camera.CameraSubject.Parent.Torso
+NECK.C0=NECK.C0:Lerp(CFrame.new(0+0*math.cos(sine/10),1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+RJ.C0=RJ.C0:Lerp(CFrame.new(0+0*math.cos(sine/10),-1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(-10+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+RS.C0=RS.C0:Lerp(CFrame.new(1.5+0*math.cos(sine/10),0.5+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+-50*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(5+7*math.cos(sine/10))),0.5) 
+LS.C0=LS.C0:Lerp(CFrame.new(-1.5+0*math.cos(sine/10),0.5+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+50*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(-5+0*math.cos(sine/10))),0.5) 
+RH.C0=RH.C0:Lerp(CFrame.new(0.5+0*math.cos(sine/10),-1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+-50*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+1*math.cos(sine/10))),0.5) 
+LH.C0=LH.C0:Lerp(CFrame.new(-0.5+0*math.cos(sine/10),-1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+50*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+1*math.cos(sine/10))),0.5)
+workspace.Camera.CameraSubject.Parent["RedEyeSword"].Handle.AccessoryWeld.C0=workspace.Camera.CameraSubject.Parent["RedEyeSword"].Handle.AccessoryWeld.C0:Lerp(CFrame.new(3+0*math.cos(sine/10),2+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+23.4*math.cos(sine/10)),math.rad(90+0*math.cos(sine/10)),math.rad(176.8+0*math.cos(sine/10))),0.5)
+end)
+
+reanimate:Animation("run",function()
+RH.Part0 = workspace.Camera.CameraSubject.Parent.Torso
+LH.Part0 = workspace.Camera.CameraSubject.Parent.Torso
+NECK.C0=NECK.C0:Lerp(CFrame.new(0+0*math.cos(sine/10),1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+RJ.C0=RJ.C0:Lerp(CFrame.new(0+0*math.cos(sine/10),-1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(-10+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+RS.C0=RS.C0:Lerp(CFrame.new(1.5+0*math.cos(sine/10),0.5+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+-50*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(5+7*math.cos(sine/10))),0.5) 
+LS.C0=LS.C0:Lerp(CFrame.new(-1.5+0*math.cos(sine/10),0.5+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+50*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(-5+0*math.cos(sine/10))),0.5) 
+RH.C0=RH.C0:Lerp(CFrame.new(0.5+0*math.cos(sine/10),-1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+-50*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+1*math.cos(sine/10))),0.5) 
+LH.C0=LH.C0:Lerp(CFrame.new(-0.5+0*math.cos(sine/10),-1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+50*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+1*math.cos(sine/10))),0.5)
+workspace.Camera.CameraSubject.Parent["RedEyeSword"].Handle.AccessoryWeld.C0=workspace.Camera.CameraSubject.Parent["RedEyeSword"].Handle.AccessoryWeld.C0:Lerp(CFrame.new(3+0*math.cos(sine/10),2+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+23.4*math.cos(sine/10)),math.rad(90+0*math.cos(sine/10)),math.rad(176.8+0*math.cos(sine/10))),0.5)
+end)
+
+reanimate:Animation("jump",function()
+RH.Part0 = workspace.Camera.CameraSubject.Parent.Torso
+LH.Part0 = workspace.Camera.CameraSubject.Parent.Torso
+NECK.C0=NECK.C0:Lerp(CFrame.new(0+0*math.cos(sine/10),1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+RJ.C0=RJ.C0:Lerp(CFrame.new(0+0*math.cos(sine/10),-1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+2*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+RS.C0=RS.C0:Lerp(CFrame.new(1.5+0*math.cos(sine/10),0.5+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(150+10*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+LS.C0=LS.C0:Lerp(CFrame.new(-1.5+0*math.cos(sine/10),0.5+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(150+10*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+RH.C0=RH.C0:Lerp(CFrame.new(0.5+0*math.cos(sine/10),-1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(-4+0*math.cos(sine/10)),math.rad(-5+0*math.cos(sine/10)),math.rad(3+0*math.cos(sine/10))),0.5) 
+LH.C0=LH.C0:Lerp(CFrame.new(-0.5+0*math.cos(sine/10),-1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(4+0*math.cos(sine/10)),math.rad(5+0*math.cos(sine/10)),math.rad(-3+0*math.cos(sine/10))),0.5)
+workspace.Camera.CameraSubject.Parent["RedEyeSword"].Handle.AccessoryWeld.C0=workspace.Camera.CameraSubject.Parent["RedEyeSword"].Handle.AccessoryWeld.C0:Lerp(CFrame.new(3+0*math.cos(sine/10),3.5+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(170.5+0*math.cos(sine/10)),math.rad(89.2+0*math.cos(sine/10)),math.rad(-180.1+0*math.cos(sine/10))),0.5)
+end)
+
+reanimate:Animation("fall",function()
+RH.Part0 = workspace.Camera.CameraSubject.Parent.Torso
+LH.Part0 = workspace.Camera.CameraSubject.Parent.Torso
+NECK.C0=NECK.C0:Lerp(CFrame.new(0+0*math.cos(sine/10),1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+RJ.C0=RJ.C0:Lerp(CFrame.new(0+0*math.cos(sine/10),-1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+2*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+RS.C0=RS.C0:Lerp(CFrame.new(1.5+0*math.cos(sine/10),0.5+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(150+10*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+LS.C0=LS.C0:Lerp(CFrame.new(-1.5+0*math.cos(sine/10),0.5+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(150+10*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+RH.C0=RH.C0:Lerp(CFrame.new(0.5+0*math.cos(sine/10),-1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(-4+0*math.cos(sine/10)),math.rad(-5+0*math.cos(sine/10)),math.rad(3+0*math.cos(sine/10))),0.5) 
+LH.C0=LH.C0:Lerp(CFrame.new(-0.5+0*math.cos(sine/10),-1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(4+0*math.cos(sine/10)),math.rad(5+0*math.cos(sine/10)),math.rad(-3+0*math.cos(sine/10))),0.5)
+workspace.Camera.CameraSubject.Parent["RedEyeSword"].Handle.AccessoryWeld.C0=workspace.Camera.CameraSubject.Parent["RedEyeSword"].Handle.AccessoryWeld.C0:Lerp(CFrame.new(3+0*math.cos(sine/10),3.5+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(170.5+0*math.cos(sine/10)),math.rad(89.2+0*math.cos(sine/10)),math.rad(-180.1+0*math.cos(sine/10))),0.5)
+end)
+
+reanimate:NewAnimation("Attack",function()
+RH.Part0 = workspace.Camera.CameraSubject.Parent.Torso
+LH.Part0 = workspace.Camera.CameraSubject.Parent.Torso
+NECK.C0=NECK.C0:Lerp(CFrame.new(0+0*math.cos(sine/10),1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+RJ.C0=RJ.C0:Lerp(CFrame.new(0+0*math.cos(sine/10),-1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+2*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+RS.C0=RS.C0:Lerp(CFrame.new(1.5+0*math.cos(sine/10),0.5+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+10*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+LS.C0=LS.C0:Lerp(CFrame.new(-1.5+0*math.cos(sine/10),0.5+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(100+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+45*math.cos(sine/10))),0.5) 
+RH.C0=RH.C0:Lerp(CFrame.new(0.5+0*math.cos(sine/10),-1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(-15+5*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+LH.C0=LH.C0:Lerp(CFrame.new(-0.5+0*math.cos(sine/10),-1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(15+5*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5)
+workspace.Camera.CameraSubject.Parent["RedEyeSword"].Handle.AccessoryWeld.C0=workspace.Camera.CameraSubject.Parent["RedEyeSword"].Handle.AccessoryWeld.C0:Lerp(CFrame.new(2.4+0*math.cos(sine/10),2.6+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(-20.4+0*math.cos(sine/10)),math.rad(183.1+0*math.cos(sine/10)),math.rad(45.3+0*math.cos(sine/10))),0.5)
+end)
+
+reanimate:Keybind("e",function()
+reanimate:SetAnimation("Attack",4) -- make the duration upper than 1 or just make it 1
+end)
+
+reanimate:NewAnimation("Sit",function()
+RH.Part0 = workspace.Camera.CameraSubject.Parent.Torso
+LH.Part0 = workspace.Camera.CameraSubject.Parent.Torso
+NECK.C0=NECK.C0:Lerp(CFrame.new(0+0*math.cos(sine/10),1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+RJ.C0=RJ.C0:Lerp(CFrame.new(0+0*math.cos(sine/10),-3+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(-3+0*math.cos(sine/10)),math.rad(0+-1*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10))),0.5) 
+RS.C0=RS.C0:Lerp(CFrame.new(1.5+0*math.cos(sine/10),0.5+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+3*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(10+0*math.cos(sine/10))),0.5) 
+LS.C0=LS.C0:Lerp(CFrame.new(-1.5+0*math.cos(sine/10),0.5+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+3*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(-10+0*math.cos(sine/10))),0.5) 
+RH.C0=RH.C0:Lerp(CFrame.new(0.5+0*math.cos(sine/10),-1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(100+2*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(10+0*math.cos(sine/10))),0.5) 
+LH.C0=LH.C0:Lerp(CFrame.new(-0.5+0*math.cos(sine/10),-1+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(100+2*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(-10+0*math.cos(sine/10))),0.5)
+workspace.Camera.CameraSubject.Parent["RedEyeSword"].Handle.AccessoryWeld.C0=workspace.Camera.CameraSubject.Parent["RedEyeSword"].Handle.AccessoryWeld.C0:Lerp(CFrame.new(4+0*math.cos(sine/10),2+0*math.cos(sine/10),0+0*math.cos(sine/10))*CFrame.Angles(math.rad(0+0*math.cos(sine/10)),math.rad(0+0*math.cos(sine/10)),math.rad(12.1+0*math.cos(sine/10))),0.5)
+end)
+
+reanimate:Keybind("f",function()
+reanimate:SetAnimation("Sit",5) -- make the duration upper than 1 or just make it 1
+end)
